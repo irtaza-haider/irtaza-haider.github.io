@@ -10,6 +10,17 @@ $on-phone:         450px;
 $on-palm:          660px;
 $on-laptop:        1000px;
 
+@mixin body {
+    min-height: 100vh;
+    position: relative;
+}
+
+@mixin footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
